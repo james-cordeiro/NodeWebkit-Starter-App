@@ -87,7 +87,8 @@ gulp.task('default', function(cb){
 gulp.task('release', function(){
     var nw = new NwBuilder({
         files: [ './package.json', './application/**/**' ],
-        platforms: ['win', 'osx', 'linux32', 'linux64']
+        platforms: ['win', 'osx', 'linux32', 'linux64'],
+        macIcns: 'icon.icns'
     });
 
     nw.on('log', function (msg) {
