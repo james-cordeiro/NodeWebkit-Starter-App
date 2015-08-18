@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        	<meta charset="UTF-8">
+		<link href="../dist/styles/application.min.css" rel="stylesheet" type="text/css" />
+	</head>
+
+    	<body>
+
+    		<article>
+    			
+	    		<header id="window__toolbar">
+	              
+		              	<section>
+		                	<h6 id="window__toolbar__title"></h6>
+		              	</section>
+
+	        	</header>
+
+	        	<main id="alerts">
+	        		<section id="alerts__message"></section>
+	        		<section id="alerts__controls">
+	        			<button id="alerts__controls--okbtn" class="button-primary">OK</button>
+	        		<section>
+	        	</main>
+
+	        	<script type="text/javascript">
+	            
+	            		var gui = require('nw.gui');
+	            		var win = gui.Window.get(); 
+
+	            		document.getElementById("window__toolbar__title").innerHTML = global.alerts.title;
+	            		document.getElementById("alerts__message").innerHTML = global.alerts.message;
+
+	            		document.getElementById("alerts__controls--okbtn").onclick = function(){
+					win.close();
+	            		};
+
+	            	</script>
+
+	        </article>
+
+    	</body>
+</html>

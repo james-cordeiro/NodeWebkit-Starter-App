@@ -1,0 +1,7 @@
+.DS_Store
+.sass-cache
+application/src/sources/*
+node_modules
+cache
+build
+

@@ -1,0 +1,99 @@
+
+
+
+
+
+
+/*
+
+1. Base Application Configurations
+
+*/
+
+
+	$base__font--color: 		#AAAAAA;
+	$base__font--family: 		sans-serif;
+	$base__font--size: 		1.5em;
+
+
+
+
+
+
+
+
+
+/* 
+
+2. Window Application Configurations
+
+*/
+
+
+
+	/* Toolbar */
+
+	$window__button--size:				3;
+	$window__button--spacing:			em($base__font--size / 2);
+
+	$window__toolbar--height: 			2em;
+	$window__toolbar--color: 			#252525;
+	$window__toolbar--window-btn-color: 		#454545;
+	$window__toolbar__title--color: 		#555555;
+
+	$window__toolbar__min--color:	  		radial-gradient(#EFDB25, #D8C72E);
+	$window__toolbar__max--color:	  		radial-gradient(#3FD82E, #49BF3C);
+	$window__toolbar__close--color:	  		radial-gradient(#EF2938, #D63641);
+
+	$window__toolbar__min--color-motion-fix:	$window__button--size;
+	$window__toolbar__max--color-motion-fix:	$window__button--size;
+	$window__toolbar__close--color-motion-fix:	$window__button--size;
+
+	/* Window */
+
+	$window__bg--color: 				#272727;
+	$window__grid--size: 				960px;
+	$window__grid--columns: 			12;
+
+	$window__scrollbars__thumb--bg: 		$window__toolbar--color;
+	$window__scrollbars--color:	 		$window__toolbar__title--color;
+
+	$window__footer--height: 			$window__toolbar--height;
+
+
+
+
+
+
+/* 
+
+3. Context Menu Configurations
+
+*/
+
+
+	$contextMenu__background--color: 	#353535;
+	$contextMenu__link--color: 		#505050;
+	$contextMenu__link--color--hover: 	$base__font--color;
+
+
+
+
+
+
+
+
+
+/*
+
+4. (Skeleton) Framework Overrides
+
+*/
+
+	
+	$button-primary--color: 		#EE2A7B;
+	$button-primary--color-border:		#E2297D;
+	$button-primary--color--hover:		darken($button-primary--color, 10%);
+  	$button-primary--color-border--hover: 	darken($button-primary--color-border, 10%);
+
+

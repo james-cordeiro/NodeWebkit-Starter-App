@@ -1,0 +1,34 @@
+.app {
+	
+	height: calc(100% - (#{ $window__toolbar--height } + #{ $window__footer--height }));
+
+	article, section, .columns {
+		height: 100%;
+		@include box__sizing();
+	}
+
+	.columns {
+		padding: 1em;
+	}
+
+	&__toolbelt {
+		overflow-y: auto;
+
+		&__menu {
+			list-style: none;
+		}
+	}
+
+	&__body {
+
+		overflow: auto;
+		height: 100%;
+		padding: .5em;
+
+		h1, h2, h3, h4, h5, h6 {
+			text-align: center;
+		}
+
+	}
+
+}

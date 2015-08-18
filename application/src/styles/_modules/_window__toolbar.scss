@@ -1,0 +1,112 @@
+
+
+
+
+
+#window__toolbar {
+	
+
+	width: 100%;
+	background-color: $window__toolbar--color;
+	height: $window__toolbar--height;
+
+	-webkit-app-region: drag;
+	-webkit-user-select: none;
+
+	@include box__sizing();
+
+	nav{
+		display: inline-block;
+		position: absolute;
+		left: 0;
+	}
+
+	section {
+		text-align: center;
+		height: 100%;
+
+	}
+
+	&__title {
+		margin: 0;
+		display: inline-block;
+		color: $window__toolbar__title--color;
+		font-size: 80%;
+
+		&:hover{
+			cursor: default;
+		}
+	}
+
+	&__controls {
+
+		height: 100%;
+		margin: 0; margin-left: $window__button--spacing;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+		vertical-align: middle;
+		float: left;
+		@include clearfix();
+
+		li {
+
+			height: $window__toolbar--height;
+			display: table-cell;
+			vertical-align: middle;
+
+			color: white;
+				
+				
+			padding-left: $window__button--spacing;
+			&:last-child {
+				padding-right: $window__button--spacing;
+			}
+
+		}
+
+		&:hover{
+
+			a#window__toolbar__controls--minimize{
+				background: $window__toolbar__min--color;
+				width: $window__toolbar--height / $window__toolbar__min--color-motion-fix;
+				height: $window__toolbar--height / $window__toolbar__min--color-motion-fix;
+				border-radius: $window__toolbar--height / ($window__toolbar__min--color-motion-fix * 2);
+			}
+
+			a#window__toolbar__controls--maximize{
+				background: $window__toolbar__max--color;
+				width: $window__toolbar--height / $window__toolbar__max--color-motion-fix;
+				height: $window__toolbar--height / $window__toolbar__max--color-motion-fix;
+				border-radius: $window__toolbar--height / ($window__toolbar__max--color-motion-fix * 2);
+			}
+
+			a#window__toolbar__controls--close{
+				background: $window__toolbar__close--color;
+				width: $window__toolbar--height / $window__toolbar__close--color-motion-fix;
+				height: $window__toolbar--height / $window__toolbar__close--color-motion-fix;
+				border-radius: $window__toolbar--height / ($window__toolbar__close--color-motion-fix * 2); 			
+			}
+
+		}
+
+	}
+
+}
+
+a.window__toolbar--link {
+	
+	text-decoration: none;
+	color: inherit;
+
+	-webkit-app-region: no-drag;
+
+	background: $window__toolbar--window-btn-color;
+	width: $window__toolbar--height / $window__button--size;
+	height: $window__toolbar--height / $window__button--size;
+	border-radius: $window__toolbar--height / ($window__button--size * 2); 
+	display: block;
+	@include box__sizing();
+	cursor: default;
+
+}

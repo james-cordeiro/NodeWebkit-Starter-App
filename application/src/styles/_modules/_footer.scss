@@ -1,0 +1,22 @@
+footer, #window__footer {
+	
+	padding: .25em 1.5em;
+	-webkit-user-select: none;
+	width: 100%;
+	position: absolute; bottom: 0; z-index: 10;
+	background-color: lighten($window__toolbar--color, 2%);
+	max-height: $window__footer--height;
+
+	&__title {
+
+		margin: 0;
+		display: inline-block;
+		font-size: 75%;
+		font-style: italic;
+		color: darken($base__font--color, 30%);
+
+		&:hover{
+			cursor: default;
+		}
+	}
+}

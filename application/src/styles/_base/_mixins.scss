@@ -1,0 +1,22 @@
+@mixin clearfix() {
+	
+	*zoom: 1;
+  	
+  	&:before, &:after {
+    		content: " ";
+    		display: block;
+  	}
+  	
+  	&:after {
+    		clear: both;
+  	}
+
+}
+
+@mixin box__sizing($size: border-box){
+	-webkit-box-sizing: $size;
+	-moz-box-sizing: $size;
+	-ms-box-sizing: $size;
+	-o-box-sizing: $size;
+	box-sizing: $size;
+}
