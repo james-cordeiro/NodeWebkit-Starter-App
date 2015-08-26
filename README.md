@@ -2,7 +2,7 @@
 
 This is a short and unobstrusive read me. Quick details for starting and running a nodewebkit (NW) app. There are/can be much improvements to be made to this starter kit. _Pull requests are welcome!!!_ 
 
-Help me improve it. Help me Learn. Do Good. Drink Coffee. Lot's of it!!
+Help me improve it. Help me Learn. Do Good. Drink Coffee. Lot's of it!!!
 
 The starter kit works best (designs based too) on Mac system (sorry to those who are not Apple inclined). However, submit a pull request to help me it more generic. Regardless, it does build for Linux, Windows & Mac. Works too (most of the time).
 
